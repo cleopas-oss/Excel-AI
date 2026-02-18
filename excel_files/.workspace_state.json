@@ -1,0 +1,17 @@
+{
+  "files": {
+    "integrity_final.xlsx": "/excel_files/integrity_final.xlsx",
+    "path_to_your_excel_file.xlsx": "/excel_files/path_to_your_excel_file.xlsx",
+    "qa_backup.xlsx": "/excel_files/qa_backup.xlsx",
+    "Project1.xlsx": "/excel_files/Project1.xlsx",
+    "omega2.xlsx": "/excel_files/omega2.xlsx"
+  },
+  "aliases": {
+    "integrity_test.xlsx": "integrity_v2.xlsx",
+    "integrity_v2.xlsx": "integrity_final.xlsx",
+    "alpha1.xlsx": "alpha2.xlsx",
+    "beta.xlsx": "qa_v1.xlsx",
+    "qa_v1.xlsx": "qa_backup.xlsx"
+  },
+  "active_file": "omega2.xlsx"
+}

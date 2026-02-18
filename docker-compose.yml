@@ -1,0 +1,24 @@
+services:
+  ai-app:
+    build: ./app
+    image: excel-ai-mvp-app
+    container_name: excel-ai-app
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./app:/app
+      - ./excel_files:/excel_files
+
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+      - HF_MODEL=meta-llama/Llama-3.1-8B-Instruct:novita
+      - EXCEL_FILES_PATH=/excel_files
+
+    command: python main.py
+
+ 
+
+    # Run with:
+    # docker-compose run --rm -it ai-app
